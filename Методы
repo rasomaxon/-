@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        public double Sum(double a, double b)
+        {
+            double result;
+            result = a + b;
+            return result;
+        }
+        public double Min(double a, double b)
+        {
+            double result;
+            result = a - b;
+            return result;
+        }
+        public double Mult(double a, double b)
+        {
+            double result;
+            result = a * b;
+            return result;
+        }
+        static void Main(string[] args)
+        {
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
+
+            Program n = new Program();
+            Console.WriteLine("Сумма чисел = {0}", n.Sum(a, b));
+            Console.WriteLine("Разность чисел = {0}", n.Min(a, b));
+            Console.WriteLine("Произведение чисел = {0}", n.Mult(a, b));
+        }
+    }
+}
