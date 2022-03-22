@@ -1,0 +1,28 @@
+using System;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void sum(double x, double y)
+        {
+            Console.WriteLine(x+y);
+        }
+        static void min(double x, double y)
+        {
+            Console.WriteLine(x-y);
+        }
+        static void mult(double x, double y)
+        {
+            Console.WriteLine(x*y);
+        }
+        static void Main(string[] args)
+        {
+        var x = Convert.ToDouble(Console.ReadLine());
+        var y = Convert.ToDouble(Console.ReadLine());
+            sum(x, y);
+            min(x, y);
+            mult(x, y);
+        }
+    }
+}
